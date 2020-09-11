@@ -1,12 +1,12 @@
-##Google Cloud Fundamentals: Getting Started with Compute Engine
-#Objectives:
+## Google Cloud Fundamentals: Getting Started with Compute Engine
+# Objectives:
 - Create a Compute Engine virtual machine using the Google Cloud Platform (GCP) Console.
 
 - Create a Compute Engine virtual machine using the gcloud command-line interface.
 
 - Connect between the two instances.
 
-#Task 1: Sign in to the Google Cloud Platform (GCP) Console
+# Task 1: Sign in to the Google Cloud Platform (GCP) Console
 1. Make sure you signed into Qwiklabs using an `incognito window`
 
 2. Note the lab's `access time` and make sure you can finish in that time block.
@@ -24,7 +24,7 @@
 7. Accept the terms and skip the recovery resource page
 
 
-#Task 2: Create a virtual machine using the GCP Console(Now translated to Cloud shell)
+# Task 2: Create a virtual machine using the GCP Console(Now translated to Cloud shell)
 1. In GCP console, on the top right toolbar, `click` the Open Cloud Shell button
 
 2. Click `Continue`
@@ -37,7 +37,7 @@
 > You could Type `Exit` in Cloud shell if need for exiting arises.
 
 
-#Task 3: Create a virtual machine using the gcloud command line
+# Task 3: Create a virtual machine using the gcloud command line
 > Skip to step **3** if you did not exit in the previous Task.
 
 1. In GCP console, on the top right toolbar, `click` the Open Cloud Shell button
@@ -58,7 +58,7 @@
 > Note: The VM can take about two minutes to launch and be fully available for use
 
 
-#Task 4: Connect between VM instances
+# Task 4: Connect between VM instances
 1. In the cloud shell, execute the following command to list the running Vitual Machines in the project:
     `gcloud compute instances list`
 
@@ -104,7 +104,4 @@
     `gcloud compute instances list`
 > You will see your web server's home page, including your custom text.
 
-<!-- 
-Congratulations!
-Google Cloud Fundamental - Getting Started with Compute Engine ends here 
--->
+<!--Documentation ends here!-->
