@@ -14,7 +14,7 @@
 2. Note the lab's `access time` and make sure you can finish in that time block.
 > There is no pause feature. You can restart if needed, but you have to start at the beginning.
 
-3. When ready, `Click` *start_lab*
+3. When ready, **Click** *start_lab*
 
 4. Note your lab credentials. You will use them to sign in to Cloud Platform Console. img/open_google_console.png
 
@@ -114,27 +114,27 @@
 
 6. Paste the content below into the file:
 
-    <html>
-    <head><title>Welcome to my excellent blog</title></head>
-    <body>
-    <h1>Welcome to my excellent blog</h1>
-    <?php
-    $dbserver = "CLOUDSQLIP";
-    $dbuser = "blogdbuser";
-    $dbpassword = "DBPASSWORD";
-    // In a production blog, we would not store the MySQL
-    // password in the document root. Instead, we would store it in a
-    // configuration file elsewhere on the web server VM instance.
+    `<html>`
+    `<head><title>Welcome to my excellent blog</title></head>`
+    `<body>`
+    `<h1>Welcome to my excellent blog</h1>`
+    `<?php`
+    `$dbserver = "CLOUDSQLIP";`
+    `$dbuser = "blogdbuser";`
+    `$dbpassword = "DBPASSWORD";`
+    `// In a production blog, we would not store the MySQL`
+    `// password in the document root. Instead, we would store it in a`
+    `// configuration file elsewhere on the web server VM instance.`
 
-    $conn = new mysqli($dbserver, $dbuser, $dbpassword);
+    `$conn = new mysqli($dbserver, $dbuser, $dbpassword);`
 
-    if (mysqli_connect_error()) {
-            echo ("Database connection failed: " . mysqli_connect_error());
-    } else {
-            echo ("Database connection succeeded.");
-    }
-    ?>
-    </body></html>
+    `if (mysqli_connect_error()) {`
+           ` echo ("Database connection failed: " . mysqli_connect_error());`
+    `} else {`
+            `echo ("Database connection succeeded.");`
+    `}`
+    `?>`
+    `</body></html>`
 > In a later step, you will insert your Cloud SQL instance's IP address and your database password into this file. For now, leave the file unmodified.
 
 7. Press Ctrl+O, and then press Enter to save your edited file.
@@ -179,7 +179,8 @@
 
 2. Click `Continue`
 
-3. Execute:
+3. Edit the command below by replacing the `[BUCKET_NAME]` with the bucket name created in task 2:
+    `https://console.cloud.google.com/storage/browser/[BUCKET_NAME]`
 
 4. Return to your ssh session on your `bloghost` VM instance.
 
@@ -198,7 +199,7 @@
     `'>`
 
 **Output Expected:**
-<img src='https://storage.googleapis.com/qwiklabs-gcp-0005e186fa559a09/my-excellent-blog.png'>
+`<img src='https://storage.googleapis.com/qwiklabs-gcp-0005e186fa559a09/my-excellent-blog.png'>`
 
 **NOTE:*** Do not copy the link
 > The effect of these steps is to place the line containing <img src='...'> immediately before the line containing <h1>...</h1>
